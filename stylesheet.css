@@ -1,7 +1,9 @@
-body, html {
+body,
+html {
   padding: 0;
   margin: 0;
 }
+
 /* latin-ext */
 @font-face {
   font-family: 'Lato';
@@ -131,13 +133,14 @@ name {
   margin: auto;
   padding: auto;
 }
+
 .section {
   width: 100%;
   border: 0px;
   border-spacing: 0px;
   border-collapse: separate;
   margin: auto;
-  padding:auto;
+  padding: auto;
 }
 
 .thumbnail {
@@ -149,9 +152,55 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+
 /*
 table table:nth-of-type(3) {
   background: #F0F0E0;
   box-shadow: 0 0 0 100vmax #F0F0E0;
   clip-path: inset(0 -100vmax);
 } */
+
+.table-column {
+  display: none;
+}
+
+.sr-only {
+  display: none;
+}
+
+td.ContributionCalendar-day {
+  min-width: 1em;
+  min-height: 1em;
+}
+
+div.js-calendar-graph div:last-child {
+  display: none;
+}
+
+table.ContributionCalendar-grid thead {
+  display: none;
+}
+
+td.ContributionCalendar-day[data-level='0'] {
+  background-color: var(--color-calendar-graph-day-bg);
+}
+
+td.ContributionCalendar-day[data-level='1'] {
+  background-color: var(--color-calendar-graph-day-L1-bg);
+}
+
+td.ContributionCalendar-day[data-level='2'] {
+  background-color: var(--color-calendar-graph-day-L2-bg);
+}
+
+td.ContributionCalendar-day[data-level='3'] {
+  background-color: var(--color-calendar-graph-day-L3-bg);
+}
+
+td.ContributionCalendar-day[data-level='4'] {
+  background-color: var(--color-calendar-graph-day-L4-bg);
+}
+
+td span {
+  position: initial !important;
+}
